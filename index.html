@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="survey.css">
+</head>
+<body>
+  <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <h1 id="title"><center>오징어</center>
+    <div class=shapes>
+      <div id="circle"></div>
+      <div id="triangle"></div>
+        <div id="triangle::before"></div>
+      <div id="square"></div>
+    </div>
+  </h1>
+  <p id=description>규칙
+    <p>A player is not allowed to stop playing.</p>
+    <p>A player who refuses to play will be eliminated.</p>
+    <p>The game may be stopped if the majority rules.</p>
+  </p>
+  <form id=survey-form>
+    <div id="fillout">
+      <p>If you agree to the rules above please continue...</p>
+      <label class = "labels" id="name-label">$</label>
+        <input id = "name" type="text" placeholder="insert name" required><br>
+      <label class = "labels" id="email-label">$</label>
+        <input id = "email" type="email" placeholder="insert email" required><br>
+      <label class = "labels" id="number-label">$</label>
+        <input id = "number" type="number" min=18 max=100 placeholder="insert age" required><br>
+    </div><br>
+    <div id="games">
+      <label for = "games">Which game is your favorite?</label><br>
+        <input type="radio" name="games" value="red-light-green-light">Red Light, Green Light<br>
+        <input type="radio" name= "games" value="marbles">Marbles<br>
+        <input type="radio" name= "games" value="honeycomb">Honeycomb<br>
+        <input type="radio" name="games" value="tug-of-war">Tug of War<br>
+    </div><br>
+    <div id="color">Which color do you prefer?
+      <select name="color" id="dropdown"><br>
+        <option value="green">Green</option>
+        <option value="pink">Pink</option>
+      </select>
+    </div><br>
+    <div id="food">What foods do you like?<br>
+      <input type="checkbox" name="food" value="rice">Rice<br>
+      <input type="checkbox" name="food" value="noodles">Noodles<br>
+      <input type="checkbox" name="food" value="fried-chicken">Fried Chicken<br>
+      <input type="checkbox" name="food" value="japchae">Japchae<br>
+    </div>
+    <br>
+    What would you do if you won the prize money?<br>
+    <textarea id="textarea"></textarea>
+    <button id= "submit" type = "submit">Submit</button>
+  </form>
+</body>
+</html>

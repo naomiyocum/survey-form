@@ -1,0 +1,56 @@
+body {
+  background-color: #f8dbea;
+  font-family: monospace;}
+#title {padding: 1em;}
+.shapes {
+  display: flex;
+  padding-top: 1.6em;
+  justify-content: center;}
+#circle {
+  width: 200px;
+  height: 200px;
+  outline-style: solid;
+  outline-color: black;
+  outline-width: thick;
+  border-radius: 50%;
+  padding: 0;}
+#triangle {
+  border-bottom: 200px solid black;
+  border-left: 110px solid transparent;
+  border-right: 110px solid transparent;}
+#triangle::before {
+  content:'';
+  position: absolute;
+  transform: scale(var(--triangle,0.92));
+  top: 4.2em;
+  left: 501px;
+  margin: 10px;
+  width: 0px;
+  border-bottom: 200px solid #f8dbea;
+  border-left: 110px solid transparent;
+  border-right: 110px solid transparent;}
+#square {
+  width: 200px;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+  box-sizing: border-box;
+  border-width: thick;
+  padding: 0;
+  margin-left: 25px;}
+#description {
+  padding-left: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#survey-form {
+  padding-top: 1em;
+}
+.labels {
+  font-size: 1.5em;
+}
+#textarea {padding-right: 20em;
+  padding-bottom: 10em;}
+#submit {
+  margin: 2em;
+}
